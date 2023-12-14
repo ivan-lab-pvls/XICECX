@@ -1,4 +1,5 @@
 import 'package:advertising_id/advertising_id.dart';
+import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:appsflyer_sdk/appsflyer_sdk.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
@@ -36,6 +37,7 @@ Future<void> main() async {
   final bool shouldShowRedContainer = await checkUserCoinsForGame();
   await isRateCalled();
   prefs = await SharedPreferences.getInstance();
+  final status = await AppTrackingTransparency.requestTrackingAuthorization();
   AppsFlyerOptions appsFlyerOptions = AppsFlyerOptions(
       afDevKey: 'f6Jtroa5scARoH7cDUGzu9',
       appId: '6470912210',
@@ -50,8 +52,6 @@ Future<void> main() async {
       registerOnAppOpenAttributionCallback: true,
       registerOnDeepLinkingCallback: true);
   _printIds();
-  print(add);
-  print(adv);
   runApp(MyApp(shouldShowRedContainer));
 }
 

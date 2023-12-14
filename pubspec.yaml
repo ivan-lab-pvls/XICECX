@@ -50,6 +50,7 @@ dependencies:
   firebase_analytics: ^10.6.3
   appsflyer_sdk: ^6.12.2
   advertising_id: ^2.6.0
+  app_tracking_transparency: ^2.0.4
 
 dev_dependencies:
   flutter_test:
