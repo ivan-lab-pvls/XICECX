@@ -1,6 +1,8 @@
 PODS:
   - advertising_id (0.0.1):
     - Flutter
+  - app_tracking_transparency (0.0.1):
+    - Flutter
   - appsflyer_sdk (6.8.0):
     - AppsFlyerFramework (= 6.12.2)
     - Flutter
@@ -158,6 +160,7 @@ PODS:
 
 DEPENDENCIES:
   - advertising_id (from `.symlinks/plugins/advertising_id/ios`)
+  - app_tracking_transparency (from `.symlinks/plugins/app_tracking_transparency/ios`)
   - appsflyer_sdk (from `.symlinks/plugins/appsflyer_sdk/ios`)
   - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/ios`)
   - firebase_analytics (from `.symlinks/plugins/firebase_analytics/ios`)
@@ -194,6 +197,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   advertising_id:
     :path: ".symlinks/plugins/advertising_id/ios"
+  app_tracking_transparency:
+    :path: ".symlinks/plugins/app_tracking_transparency/ios"
   appsflyer_sdk:
     :path: ".symlinks/plugins/appsflyer_sdk/ios"
   audioplayers_darwin:
@@ -225,6 +230,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   advertising_id: 31c738918c2e04d86d80c293357e61e06e87df74
+  app_tracking_transparency: 5b1745ef9ade815f7455cb6a0848349589afb7c5
   appsflyer_sdk: beae2edc91c51ca92cad637534b45b22ff35d287
   AppsFlyerFramework: 6eb4d89d2eb9a6632317f1055b359d9fd85fd5ff
   audioplayers_darwin: 877d9a4d06331c5c374595e46e16453ac7eafa40
